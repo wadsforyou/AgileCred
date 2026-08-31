@@ -1,0 +1,28 @@
+{
+  "name": "SiteContent",
+  "type": "object",
+  "properties": {
+    "page_key": {
+      "type": "string",
+      "title": "Page Key",
+      "description": "Unique identifier for the banner, e.g. 'home', 'about', 'loan:community'"
+    },
+    "heading": {
+      "type": "string",
+      "title": "Banner Heading"
+    },
+    "subheading": {
+      "type": "string",
+      "title": "Banner Subheading"
+    },
+    "image_url": {
+      "type": "string",
+      "format": "uri",
+      "title": "Banner Image URL"
+    }
+  },
+  "required": [
+    "page_key",
+    "heading"
+  ]
+}

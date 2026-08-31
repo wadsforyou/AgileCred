@@ -1,0 +1,44 @@
+{
+  "name": "ActivityLog",
+  "type": "object",
+  "properties": {
+    "action": {
+      "type": "string",
+      "title": "Action",
+      "description": "Short action label, e.g. 'Application status updated'"
+    },
+    "entity_type": {
+      "type": "string",
+      "title": "Entity Type",
+      "description": "e.g. LoanApplication, LoanProduct"
+    },
+    "record_id": {
+      "type": "string",
+      "title": "Record ID"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "previous_value": {
+      "type": "string",
+      "title": "Previous Value"
+    },
+    "new_value": {
+      "type": "string",
+      "title": "New Value"
+    },
+    "user_id": {
+      "type": "string",
+      "title": "User ID"
+    },
+    "user_name": {
+      "type": "string",
+      "title": "User Name"
+    }
+  },
+  "required": [
+    "action",
+    "description"
+  ]
+}

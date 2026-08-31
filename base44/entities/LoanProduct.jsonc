@@ -1,0 +1,67 @@
+{
+  "name": "LoanProduct",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Product Name"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Community Loans",
+        "MSME Loans",
+        "Consumer Loans",
+        "Social Financing",
+        "Farming Loans"
+      ],
+      "title": "Loan Category"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "min_amount": {
+      "type": "number",
+      "title": "Minimum Amount (USD)"
+    },
+    "max_amount": {
+      "type": "number",
+      "title": "Maximum Amount (USD)"
+    },
+    "min_period_months": {
+      "type": "number",
+      "title": "Minimum Period (Months)"
+    },
+    "max_period_months": {
+      "type": "number",
+      "title": "Maximum Period (Months)"
+    },
+    "default_interest_rate": {
+      "type": "number",
+      "title": "Default Interest Rate (% per annum)",
+      "description": "Illustrative default rate for the calculator \u2014 actual rates are subject to assessment"
+    },
+    "repayment_frequencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "Monthly",
+          "Bi-Weekly",
+          "Weekly"
+        ]
+      },
+      "title": "Available Repayment Frequencies"
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Active",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}

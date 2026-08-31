@@ -1,0 +1,25 @@
+{
+  "name": "ApplicationNote",
+  "type": "object",
+  "properties": {
+    "application_id": {
+      "type": "string",
+      "title": "Application ID",
+      "description": "Reference to LoanApplication id"
+    },
+    "note": {
+      "type": "string",
+      "title": "Note"
+    },
+    "author": {
+      "type": "string",
+      "title": "Author",
+      "description": "Name of the staff member who wrote the note"
+    }
+  },
+  "required": [
+    "application_id",
+    "note",
+    "author"
+  ]
+}

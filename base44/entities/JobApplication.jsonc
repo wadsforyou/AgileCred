@@ -1,0 +1,63 @@
+{
+  "name": "JobApplication",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "position_of_interest": {
+      "type": "string",
+      "title": "Position of Interest"
+    },
+    "area_of_interest": {
+      "type": "string",
+      "enum": [
+        "Microfinance",
+        "Financial Inclusion",
+        "Entrepreneurship",
+        "MSME Development",
+        "Agriculture",
+        "Customer Service",
+        "Other"
+      ],
+      "title": "Area of Interest"
+    },
+    "cover_letter": {
+      "type": "string",
+      "title": "Cover Letter / Message"
+    },
+    "resume_url": {
+      "type": "string",
+      "format": "uri",
+      "title": "Resume / CV URL"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Received",
+        "Reviewing",
+        "Shortlisted",
+        "Rejected",
+        "Hired"
+      ],
+      "title": "Status",
+      "default": "Received"
+    }
+  },
+  "required": [
+    "full_name",
+    "email",
+    "phone",
+    "area_of_interest"
+  ]
+}

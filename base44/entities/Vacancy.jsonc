@@ -1,0 +1,60 @@
+{
+  "name": "Vacancy",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Job Title"
+    },
+    "department": {
+      "type": "string",
+      "title": "Department"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "job_type": {
+      "type": "string",
+      "enum": [
+        "Full-time",
+        "Part-time",
+        "Contract",
+        "Internship"
+      ],
+      "title": "Job Type",
+      "default": "Full-time"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "requirements": {
+      "type": "string",
+      "title": "Requirements"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "Closed"
+      ],
+      "title": "Status",
+      "default": "Open"
+    },
+    "is_published": {
+      "type": "boolean",
+      "title": "Published",
+      "default": true
+    },
+    "closing_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Closing Date"
+    }
+  },
+  "required": [
+    "title",
+    "department"
+  ]
+}

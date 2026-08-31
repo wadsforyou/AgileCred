@@ -1,0 +1,47 @@
+{
+  "name": "ContactEnquiry",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "subject": {
+      "type": "string",
+      "title": "Subject"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "New",
+        "In Progress",
+        "Resolved"
+      ],
+      "title": "Status",
+      "default": "New"
+    },
+    "assigned_to": {
+      "type": "string",
+      "title": "Assigned To",
+      "description": "Staff member name or id"
+    }
+  },
+  "required": [
+    "full_name",
+    "email",
+    "message"
+  ]
+}

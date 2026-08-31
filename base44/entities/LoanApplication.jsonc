@@ -1,0 +1,135 @@
+{
+  "name": "LoanApplication",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "title": "Full Name",
+      "description": "Applicant's full legal name"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone",
+      "description": "Applicant's contact phone number"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email",
+      "description": "Applicant's email address"
+    },
+    "national_id": {
+      "type": "string",
+      "title": "National ID / Passport",
+      "description": "National ID or passport number"
+    },
+    "residential_address": {
+      "type": "string",
+      "title": "Residential Address"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "country": {
+      "type": "string",
+      "title": "Country",
+      "default": "Zimbabwe"
+    },
+    "employment_status": {
+      "type": "string",
+      "enum": [
+        "Employed",
+        "Self-Employed",
+        "Business Owner",
+        "Pensioner",
+        "Civil Servant",
+        "Unemployed",
+        "Other"
+      ],
+      "title": "Employment Status"
+    },
+    "employer_or_business_name": {
+      "type": "string",
+      "title": "Employer / Business Name"
+    },
+    "monthly_income": {
+      "type": "number",
+      "title": "Monthly Income (USD)"
+    },
+    "business_type": {
+      "type": "string",
+      "title": "Business Type"
+    },
+    "loan_category": {
+      "type": "string",
+      "enum": [
+        "Community Loans",
+        "MSME Loans",
+        "Consumer Loans",
+        "Social Financing",
+        "Farming Loans"
+      ],
+      "title": "Loan Category"
+    },
+    "loan_product": {
+      "type": "string",
+      "title": "Loan Product"
+    },
+    "amount_requested": {
+      "type": "number",
+      "title": "Amount Requested (USD)"
+    },
+    "purpose": {
+      "type": "string",
+      "title": "Purpose of Loan"
+    },
+    "preferred_contact_method": {
+      "type": "string",
+      "enum": [
+        "Phone Call",
+        "WhatsApp",
+        "Email",
+        "SMS"
+      ],
+      "title": "Preferred Contact Method"
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "title": "Uploaded Documents",
+      "description": "URLs of uploaded supporting documents"
+    },
+    "assigned_to": {
+      "type": "string",
+      "title": "Assigned To",
+      "description": "Staff member handling this application"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Submitted",
+        "Under Review",
+        "Documents Required",
+        "Assessment",
+        "Approved",
+        "Declined",
+        "Disbursed",
+        "Closed"
+      ],
+      "title": "Application Status",
+      "default": "Submitted"
+    }
+  },
+  "required": [
+    "full_name",
+    "phone",
+    "email",
+    "national_id",
+    "loan_category",
+    "amount_requested"
+  ]
+}
