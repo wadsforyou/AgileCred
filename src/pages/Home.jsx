@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useSiteContent } from "@/lib/useSiteContent";
-import { loanCategories, HERO_IMAGE } from "@/data/loanCategories";
+import { loanCategories, HERO_IMAGE, LOGO_URL } from "@/data/loanCategories";
 
 const iconMap = { Users, Briefcase, Heart, Sparkles, Sprout };
 

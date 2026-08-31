@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Upload, FileText, Check, Send, Heart, Briefcase, Sprout, GraduationCap, Users } from "lucide-react";
+import { Upload, FileText, Check, Send, Heart, Briefcase, Sprout, GraduationCap, Users, ArrowRight } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 import PageBanner from "@/components/PageBanner";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
-import { CAREERS_BANNER } from "@/data/loanCategories";
+import { loanCategories, CAREERS_BANNER } from "@/data/loanCategories";
 
 const areas = [
   { label: "Microfinance", icon: Briefcase },

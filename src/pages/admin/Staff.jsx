@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Mail, Shield } from "lucide-react";
+import { ShieldCheck, Mail, Calendar, Shield } from "lucide-react";
 import { base44 } from "@/api/base44Client";
 import { formatDate, logActivity } from "@/lib/adminHelpers";
 

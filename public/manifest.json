@@ -1,0 +1,17 @@
+{
+  "name": "AgileCred",
+  "short_name": "AgileCred",
+  "description": "AgileCred (Private) Limited is a licensed credit-only Microfinance Institution in Zimbabwe providing flexible loans for individuals, MSMEs, farmers, and communities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#002D72",
+  "theme_color": "#002D72",
+  "icons": [
+    {
+      "src": "https://media.base44.com/images/public/user_6a862194d21076deba32d6c5/a0fc29d93_AgileCredLogo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

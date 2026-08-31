@@ -319,4 +319,4 @@ export const loanCategories = [
   },
 ];
 
-export const getCategoryBySlug = (slug) => loanCategories.find((c) => c.slug === slug);
+export const getCategor
