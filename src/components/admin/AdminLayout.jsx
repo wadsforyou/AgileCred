@@ -92,7 +92,7 @@ export default function AdminLayout() {
     <div className="h-full flex flex-col bg-slate-900 text-white">
       <div className="px-5 py-5 border-b border-slate-800">
         <div className="opacity-90">
-          <Logo variant="light" size="sm" />
+          <Logo size="sm" />
         </div>
         <p className="mt-2 text-[11px] uppercase tracking-wider text-slate-400 font-semibold">Admin Dashboard</p>
       </div>
