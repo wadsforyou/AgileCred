@@ -40,3 +40,8 @@ wrangler-*.log
 cloudflare-build.log
 npm-*.log
 dev.log
+
+.wrangler/
+build-out.log
+build-err.log
+wrangler-deploy-now.log
