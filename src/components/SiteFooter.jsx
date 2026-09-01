@@ -30,7 +30,7 @@ export default function SiteFooter() {
                   "polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0 50%)",
               }}
             >
-              <Logo size="lg" />
+              <Logo size="lg" background />
               <div
                 className="mt-4 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold"
                 style={{ backgroundColor: "#ffffff", color: NAVY }}
@@ -132,7 +132,7 @@ export default function SiteFooter() {
                 clipPath: "polygon(8% 0, 92% 0, 100% 50%, 92% 100%, 8% 100%, 0 50%)",
               }}
             >
-              <Logo size="md" />
+              <Logo size="md" background />
               <div
                 className="mt-3 inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold"
                 style={{ backgroundColor: "#ffffff", color: NAVY }}

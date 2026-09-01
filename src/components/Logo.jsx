@@ -9,17 +9,26 @@ const sizes = {
   xl: "h-14 md:h-16"
 };
 
-export default function Logo({ variant = "dark", size = "md", showText = true, showEmblem = true, className = "" }) {
+export default function Logo({ variant = "dark", size = "md", showText = true, showEmblem = true, className = "", background = false }) {
   const h = sizes[size] || sizes.md;
   // On light backgrounds (footer) render the logo white so it stays visible.
   const filter = variant === "light" ? "brightness(0) invert(1)" : "none";
 
-  return (
+  const logoImg = (
     <img
       src={LOGO_URL}
       alt="AgileCred"
       className={`shrink-0 ${h} w-auto ${className}`}
-      style={{ filter }} />);
+      style={{ filter }} />
+  );
 
+  if (background) {
+    return (
+      <div className="inline-flex items-center justify-center rounded-lg bg-white p-3" style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.1)" }}>
+        {logoImg}
+      </div>
+    );
+  }
 
+  return logoImg;
 }

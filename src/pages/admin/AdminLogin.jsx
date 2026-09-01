@@ -45,7 +45,7 @@ export default function AdminLogin() {
         <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden">
           <div className="px-8 pt-8 pb-2">
             <div className="flex items-center justify-between mb-1">
-              <Logo size="md" />
+              <Logo size="md" background />
               <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-full" style={{ backgroundColor: "hsl(var(--brand-purple-light))", color: "hsl(var(--brand-purple))" }}>
                 <ShieldCheck className="w-3.5 h-3.5" /> Staff
               </span>

@@ -27,7 +27,7 @@ export default function AdminProtectedRoute() {
       <div className="min-h-screen flex items-center justify-center bg-slate-50 p-6">
         <div className="max-w-md text-center">
           <div className="flex justify-center mb-4">
-            <Logo size="lg" />
+            <Logo size="lg" background />
           </div>
           <div className="w-14 h-14 rounded-full mx-auto flex items-center justify-center" style={{ backgroundColor: "hsl(var(--brand-purple-light))", color: "hsl(var(--brand-purple))" }}>
             <ShieldAlert className="w-7 h-7" />
