@@ -5,7 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
 import OfficeMap from "@/components/OfficeMap";
 import ContactForm from "@/components/ContactForm";
-import { CONTACT_INFO, loanCategories, CONTACT_BANNER } from "@/data/loanCategories";
+import { CONTACT_INFO, CONTACT_BANNER } from "@/data/loanCategories";
 
 export default function Contact() {
   return (

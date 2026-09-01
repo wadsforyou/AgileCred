@@ -79,4 +79,4 @@ export const logActivity = async (action, description, extras = {}) => {
   }
 };
 
-export const appCode = (app) =>
+export const appCode = (app) =>  "AC-" + String(app?.id?.slice(-6) || "000000").toUpperCase();

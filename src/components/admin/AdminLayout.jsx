@@ -3,7 +3,7 @@ import { Outlet, NavLink, useLocation, Link, useNavigate } from "react-router-do
 import {
   LayoutDashboard, FileText, Users, FolderKanban, Calculator, Mail,
   Briefcase, MapPin, BarChart3, UserCog, Bell, History, Settings,
-  FileStack, Menu, X, LogOut, ExternalLink, ChevronDown, LayoutTemplate,
+  FileStack, Menu, LogOut, ExternalLink, ChevronDown, LayoutTemplate,
 } from "lucide-react";
 import Logo from "@/components/Logo";
 import { useAuth } from "@/lib/AuthContext";

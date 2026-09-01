@@ -5,7 +5,6 @@ import PageBanner from "@/components/PageBanner";
 import SectionHeading from "@/components/SectionHeading";
 import ScrollReveal from "@/components/ScrollReveal";
 import LoanCalculator from "@/components/LoanCalculator";
-import { CONTACT_INFO } from "@/data/loanCategories";
 
 const iconMap = { Users, Briefcase, Heart, Sparkles, Sprout };
 

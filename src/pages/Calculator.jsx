@@ -1,9 +1,9 @@
 import React from "react";
 import { useSearchParams, Link } from "react-router-dom";
-import { Calculator as CalcIcon, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import PageBanner from "@/components/PageBanner";
 import LoanCalculator from "@/components/LoanCalculator";
-import { loanCategories, BUSINESS_SUPPORT_IMAGE } from "@/data/loanCategories";
+import { loanCategories } from "@/data/loanCategories";
 
 export default function Calculator() {
   const [searchParams] = useSearchParams();
